@@ -12,7 +12,9 @@
         <form action="/payment" method="post">
             <div class="form-group">
                 <label for="name">Név <small>(Pl. Kovács János)</small></label>
-                <input type="text" id="name" name="name" class="form-control" placeholder="Kérlek add meg a neved" required />
+                <input type="text" id="name" name="name" class="form-control" placeholder="Kérlek add meg a neved" required 
+                    pattern="^(?=.*\S).+$" 
+                    title="A névnek minimum egy, nem szóköz jellegű karaktert kell tartalmaznia." />
             </div>
             <div class="form-group">
                 <label for="accountNumber">Bankszámlaszám <small>(Pl. 12345678-12345678 vagy 12345678-12345678-12345678)</small></label>
